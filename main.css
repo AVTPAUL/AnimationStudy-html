@@ -1,0 +1,196 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    justify-items: center;
+    background-color: black;
+}
+
+#svganimated {
+    padding-top: 56px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.svgcont {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#cssanimated {
+    padding-top: 56px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bm1, #bm2 {
+    width: 200px;
+    padding: 0px 56px;
+}
+
+h4 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+
+/* Floating Banner */
+
+#floatbanner1 {
+    position: relative;
+    background-color: rgba(39, 39, 39, 0);
+    width: 96px;
+    height: 96px;
+}
+
+.giftbody {
+    position: relative;
+    height: 96px;
+    z-index: 2;
+}
+
+.gifttop {
+    position: absolute;
+    height: 38px;
+    left: 32px;
+    top: 8px;
+    z-index: 3;
+}
+
+.coin2 {
+    position: absolute;
+    height: 17px;
+    right: 11px;
+    top: 31px;
+    z-index: 7;
+}
+
+.coin3 {
+    position: absolute;
+    height: 12px;
+    left: 11px;
+    top: 63px;
+    z-index: 7;
+}
+
+.coin4 {
+    position: absolute;
+    height: 12px;
+    left: 27px;
+    top: 31px;
+    z-index: 1;
+}
+
+.coinblur1 {
+    position: absolute;
+    height: 33px;
+    right: 7px;
+    top: 65px;
+    z-index: 3;
+}
+
+.confetti {
+    position: absolute;
+    height: 50px;
+    left: 10px;
+    top: 46px;
+    z-index: 6;
+}
+
+
+/* Hero Banner Animated */
+
+
+#Hero1 {
+    /* width: 100%;
+    height: 400px;
+    background-color: bisque; */
+    position: relative;
+    display: flex;
+}
+
+.hbbg {
+    width: 100%;
+    height: 400px;
+    max-width: 1335px;
+    object-fit: cover;
+}
+
+.gatot {
+    position: absolute;
+    height: 400px;
+    left: 400px;
+    z-index: 3;
+}
+
+.gatotglow {
+    position: absolute;
+    height: 400px;
+    left: 371px;
+}
+
+.gem1 {
+    position: absolute;
+    height: 200px;
+    left: 180px;
+    top: 0;
+}
+
+.gem2 {
+    position: absolute;
+    height: 100px;
+    right: 390px;
+    top: 54px;
+
+    /* position: absolute;
+    height: 100px;
+    right: 390px;
+    top: 54px; */
+}
+
+.gem3 {
+    position: absolute;
+    height: 150px;
+    right: 250px;
+    bottom: 5px;
+}
+
+.spark1 {
+    position: absolute;
+    height: 200px;
+    left: 211px;
+    top: 5px;
+    z-index: 3;
+    mix-blend-mode: screen;
+}
+
+
+/* Animation */
+
+.shake-vertical{animation:shake-vertical 15s ease-out infinite both}
+@keyframes shake-vertical{0%,100%{transform:translateY(0)}10%,30%,50%,70%{transform:translateY(-2px)}20%,40%,60%{transform:translateY(2px)}80%{transform:translateY(2px)}90%{transform:translateY(-2px)}}
+
+.shake-verticald15{animation:shake-vertical 20s ease-out 1.5s infinite both}
+@keyframes shake-verticald15{0%,100%{transform:translateY(0)}10%,30%,50%,70%{transform:translateY(-2px)}20%,40%,60%{transform:translateY(2px)}80%{transform:translateY(2px)}90%{transform:translateY(-2px)}}
+
+.wobble-ver-right{animation:wobble-ver-right 20s ease-in-out infinite both}
+@keyframes wobble-ver-right{0%,100%{transform:translateY(0) rotate(0);transform-origin:50% 50%}15%{transform:translateY(-5px) rotate(3deg)}30%{transform:translateY(5px) rotate(-2deg)}45%{transform:translateY(-5px) rotate(3.6deg)}60%{transform:translateY(3px) rotate(-1deg)}75%{transform:translateY(-5px) rotate(3deg)}}
+
+.shake-horizontal{animation:shake-horizontal 30s cubic-bezier(.455,.03,.515,.955) infinite both}
+@keyframes shake-horizontal{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}}
+
+.blink-1{animation:blink-1 10s infinite both}
+@keyframes blink-1{0%,50%,100%{opacity:1}25%,75%{opacity:0}}
+
+
+
+/* Draggable */
